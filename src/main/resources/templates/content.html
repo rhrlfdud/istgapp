@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html
+  xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+<meta charset="UTF-8">
+</head>  
+  <th:block layout:fragment="css"></th:block>
+  <th:block layout:fragment="script"></th:block>
+
+  <div layout:fragment="content">
+	<!--div id="input_file">
+  		<form class="input_form" action="#" enctype="multipart/form-data" th:action="@{/fileupload}" method="post">
+		    파일 : <input type="file" name="file"> <br>
+		    <button>등록하기</button>
+  		</form>	
+  	</div>
+  	<div id="input_content">
+  		<form class="input_form">
+  			<input type="text" id="input" placeholder="+ add a new task" onkeypress="must()"/>
+  			<input type="text" style="display:none">
+  		</form>	
+  	</div> 	
+  	<div>
+  		<h5 class="must">must</h5>
+  		<hr style="border-top: 2px solid #000;">
+  	</div>	
+    <div id="list_content">   
+	    <table border="1" id="must_table">
+    	</table>
+    </div-->
+   	<form class="input_form" action="#" th:action="@{/search}" method="post">
+    HashTag : <input type="text" name="hashtags" value="로켓레시피" readonly="readonly"/> <input type="submit" name="search" value="가즈아" />
+    </form>
+  </div>
+</html>
